@@ -134,10 +134,19 @@ namespace CombatSimulatorV2
        /// Plays audio files in game
        /// </summary>
        /// <param name="strWavName">Audio file to play</param>
+       
        public static void PlaySound(string strWavName)
        {
-           System.Media.SoundPlayer player = new System.Media.SoundPlayer(strWavName);
-           player.Play();
+           try
+           {
+               System.Media.SoundPlayer player = new System.Media.SoundPlayer(strWavName);
+               player.Play();
+           }
+           catch
+           {
+
+           }
+         
        }
        public enum AttackType  
        {
@@ -409,8 +418,15 @@ namespace CombatSimulatorV2
         /// <param name="strWavName">Audio file to play</param>
         public static void PlaySound(string strWavName)
         {
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer(strWavName);
-            player.Play();
+            try
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(strWavName);
+                player.Play();
+            }
+            catch
+            {
+
+            }
         }
 
         /// <summary>
