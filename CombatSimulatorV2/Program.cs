@@ -312,7 +312,7 @@ namespace CombatSimulatorV2
                    centerText("the first person to realize its potential as a tactical"); 
                    centerText("garment. The tactical turtleneck! The... tactleneck!");
                    //Prints health message
-                   centerText("You gained " + decreaseEnemyAttack + " HP from you tactleneck");
+                   centerText("You gained " + decreaseEnemyAttack + " HP from your tactleneck");
                    System.Threading.Thread.Sleep(4000);
                    break;
 
